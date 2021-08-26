@@ -11,10 +11,10 @@ public class HangedUpThreads {
 	private static Instant start;
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		httpConnectionOutsideIsolate();
+		executorService();
 	}
 
-	public static void httpConnectionOutsideIsolate() {
+	public static void executorService() {
 		System.out.println("------------ Infinite loop is started ------------");
 		start = Instant.now();
 		while (true) {
